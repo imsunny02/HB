@@ -364,7 +364,7 @@ canvas {
     border-radius: 6px;
     box-shadow: 0 2px 26px rgba(0, 0, 0, 0.12);
     font-family: "Dancing Script", cursive;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 
 .letter:after {
@@ -878,4 +878,5 @@ canvas {
 .letter .words {
   font-size: 22px !important; 
 }
+
 
