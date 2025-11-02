@@ -873,3 +873,7 @@ canvas {
         min-width: 90px;
     }
 }
+/* Dán vào cuối file style.css */
+.letter .words {
+  font-size: 22px !important; 
+}
