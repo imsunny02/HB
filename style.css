@@ -358,6 +358,7 @@ canvas {
     background-color: #FFF2EB;
     width: 90%;
     height: 90%; /* <-- Đặt chiều cao tối đa (bạn có thể sửa số 480) */
+    max-height: 480px;
 
     margin: auto;
     top: 5%;
@@ -886,4 +887,5 @@ canvas {
 .open .letter-content-wrapper {
     overflow-y: scroll; /* <-- DÒNG NÀY ĐỂ CUỘN KHI MỞ */
 }
+
 
