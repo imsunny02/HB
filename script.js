@@ -1,5 +1,27 @@
-//login section 
+// ĐOẠN CODE NÀY ĐỂ TẢI DỮ LIỆU TỪ CONFIG.JS
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Thay ảnh đăng nhập
+    const pwImage = document.getElementById('password-image');
+    if (pwImage) {
+        pwImage.src = config.passwordImage;
+    }
 
+    // 2. Thay lời chào trong thư (VD: Gửi Đức Duy của em ♥️,)
+    const letterRecipient = document.getElementById('letter-recipient');
+    if (letterRecipient) {
+        // Bạn có thể sửa "của em" ở đây nếu muốn
+        letterRecipient.textContent = `Gửi ${config.recipientName} ♥️,`; 
+    }
+
+    // 3. Thay nội dung thư
+    const letterMessage = document.getElementById('letter-message');
+    if (letterMessage) {
+        letterMessage.textContent = config.letterMessage;
+    }
+});
+
+//login section 
+// (CODE GỐC CỦA BẠN BẮT ĐẦU TỪ ĐÂY)
 document.getElementById('login-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const password = document.getElementById('password').value;
@@ -13,7 +35,8 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         page1.style.display = 'none';
         page2.style.display = 'block';
     } else {
-        alert('NÀO NÀO CHẲNG LẺ MÂT KHẨU KHÔNG NHỚ SAO')
+        // DÒNG NÀY LẤY TỪ CONFIG
+        alert(config.wrongPasswordAlert);
     }
 });
 
@@ -26,7 +49,8 @@ let w = (c.width = window.innerWidth),
     (hh = h / 4),
     (opts = {
         //text
-        strings: ["HAPPY", "BIRTHDAY", "TIENDEV"],
+        // DÒNG NÀY ĐÃ BỎ TÊN
+        strings: ["HAPPY", "BIRTHDAY"],
         charSize: 30,
         charSpacing: 35,
         lineHeight: 40,
@@ -121,10 +145,10 @@ Letter.prototype.reset = function () {
     this.spawned = false;
     this.spawningTime = (opts.fireworkSpawnTime * Math.random()) | 0;
     this.reachTime =
-      (opts.fireworkBaseReachTime + opts.fireworkAddedReachTime * Math.random()) |
-      0;
+        (opts.fireworkBaseReachTime + opts.fireworkAddedReachTime * Math.random()) |
+        0;
     this.lineWidth =
-      opts.fireworkBaseLineWidth + opts.fireworkAddedLineWidth * Math.random();
+        opts.fireworkBaseLineWidth + opts.fireworkAddedLineWidth * Math.random();
     this.prevPoints = [[0, hh, 0]];
 };
 
@@ -172,7 +196,7 @@ Letter.prototype.step = function () {
                 this.circleCreating = true;
                 this.circleFading = false;
 
-                this.circleFadeTime = (opts.fireworkCircleFadeBaseTime + opts.fireworkCircleFadeAddedTime * Math.random()) | 0;            0;
+                this.circleFadeTime = (opts.fireworkCircleFadeBaseTime + opts.fireworkCircleFadeAddedTime * Math.random()) | 0;             0;
                 this.tick = 0;
                 this.tick2 = 0;
 
@@ -232,8 +256,8 @@ Letter.prototype.step = function () {
             if (this.tick2 >= this.circleFadeTime) 
                 this.circleFading = false;
         } else {
-          ctx.fillStyle = this.lightColor.replace("light", 70);
-          ctx.fillText(this.char, this.x + this.dx, this.y + this.dy);
+            ctx.fillStyle = this.lightColor.replace("light", 70);
+            ctx.fillText(this.char, this.x + this.dx, this.y + this.dy);
         }
 
         for (var i = 0; i < this.shards.length; ++i) {
