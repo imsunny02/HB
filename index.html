@@ -13,16 +13,15 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Happy birthday EM YÊU </title>
+    <title>Happy Birthday </title>
 </head>
 
 <body>
 
-    <!--login section-->
     <div id="page1" class="login-section">
         <div class="login-box">
             <form id="login-form">
-                <img src="./image/tải xuống.jpg" alt="login illustration">
+                <img id="password-image" src="./a1.jpg" alt="login illustration">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="heart-outline"></ion-icon></span>
                     <input type="password" id="password" required>
@@ -33,7 +32,6 @@
         </div>
     </div>
 
-    <!--celebrate section-->
     <div id="page2" class="celebrate-section" style="display: none">
         <canvas id="c"></canvas>
         <div id="cake-design" class="cake">
@@ -52,17 +50,15 @@
         <button class="btn">NEXT</button>
     </div>
 
-    <!--letter section-->
     <div id="page3" class="love-section" style="display: none">
         <div class="envelope-wrapper">
             <div id="envelope" class="close">
                 <div class="front flap"></div>
                 <div class="front pocket"></div>
+                
                 <div class="letter">
-<div class="words line1">Gửi Thúy Quỳnh,</div>
-<div class="words line2">Trong khoảnh khắc đặc biệt này, anh muốn gửi đến bé những lời chúc ngọt ngào nhất. Chúc em luôn xinh đẹp, rạng rỡ và cười thật nhiều. Cảm ơn em đã xuất hiện, yêu thương và bên cạnh anh. </div>
-<div class="words line10">Anh yêu bé,</div>
-<div class="words line11">♥ From Huy Hoàng with love ♥</div>
+                    <p class="words" id="letter-recipient"></p>
+                    <p class="words" id="letter-message"></p>
                 </div>
 
                 <div class="hearts">
@@ -83,9 +79,8 @@
         <source src="./music/audio1.mp3" type="audio/mpeg">
     </audio>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
