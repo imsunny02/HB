@@ -1,5 +1,4 @@
 body {
-    overflow: hidden;
     background-color: #FFD6BA;
 }
 
@@ -893,6 +892,7 @@ canvas {
 .open .letter-content-wrapper {
     overflow-y: scroll; /* Quan trọng: Khi mở thư, cho phép cuộn DỌC */
 }
+
 
 
 
