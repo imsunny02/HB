@@ -6,7 +6,7 @@ const config = {
 
   // Lời nhắn (dùng dấu ` backtick này để viết được nhiều dòng)
   letterMessage: `
-Chúc bé iu của anh sinh nhật vui vẻ và mọi điều tốt lành sẽ đến với em. Anh hi vọng mình được có mặt trong tất các các sinh nhật của em sau này. Yêu bé nhiều lắm lắm.♥️`,
+Chúc bé iu của anh sinh nhật vui vẻ và mọi điều tốt lành sẽ đến với em. Anh hi vọng mình được có mặt trong tất các các sinh nhật của em sau này. Anh hi vọng mình được có mặt trong tất các các sinh nhật của em sau này. Yêu bé nhiều lắm lắm.♥️`,
 
   // Ảnh ở màn hình đăng nhập (page 1)
   passwordImage: "./image/a1.jpg",
@@ -15,3 +15,4 @@ Chúc bé iu của anh sinh nhật vui vẻ và mọi điều tốt lành sẽ �
   wrongPasswordAlert: "NÀO NÀO CHẲNG LẺ MÂT KHẨU KHÔNG NHỚ SAO"
 
 };
+
