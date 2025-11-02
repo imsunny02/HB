@@ -358,7 +358,8 @@ canvas {
     position: relative;
     background-color: #FFF2EB;
     width: 90%;
-    height: 90%;
+    max-height: 480px; /* <-- Đặt chiều cao tối đa (bạn có thể sửa số 480) */
+    overflow-y: auto;  /* <-- Tự động thêm thanh cuộn khi cần */
     margin: auto;
     top: 5%;
     border-radius: 6px;
@@ -878,5 +879,6 @@ canvas {
 .letter .words {
   font-size: 22px !important; 
 }
+
 
 
