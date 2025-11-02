@@ -357,7 +357,7 @@ canvas {
     position: relative;
     background-color: #FFF2EB;
     width: 90%;
-    max-height: 480px; /* <-- Đặt chiều cao tối đa (bạn có thể sửa số 480) */
+    height: 90%; /* <-- Đặt chiều cao tối đa (bạn có thể sửa số 480) */
 
     margin: auto;
     top: 5%;
@@ -564,7 +564,7 @@ canvas {
 }
 
 .open .letter {
-    transform: translateY(-250px);
+    transform: translateY(-180px);
     transition: transform 0.4s 0.6s ease, z-index 0.6s;
     z-index: 2;
 }
@@ -886,3 +886,4 @@ canvas {
 .open .letter-content-wrapper {
     overflow-y: scroll; /* <-- DÒNG NÀY ĐỂ CUỘN KHI MỞ */
 }
+
