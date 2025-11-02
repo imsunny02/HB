@@ -364,7 +364,6 @@ canvas {
     border-radius: 6px;
     box-shadow: 0 2px 26px rgba(0, 0, 0, 0.12);
     font-family: "Dancing Script", cursive;
-    overflow-y: hidden;
 }
 
 .letter:after {
@@ -892,6 +891,7 @@ canvas {
 .open .letter-content-wrapper {
     overflow-y: scroll; /* Quan trọng: Khi mở thư, cho phép cuộn DỌC */
 }
+
 
 
 
