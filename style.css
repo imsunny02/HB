@@ -887,6 +887,9 @@ canvas {
 .open .letter-content-wrapper {
     overflow-y: scroll; /* <-- DÒNG NÀY ĐỂ CUỘN KHI MỞ */
 }
-
+/* Phải nằm ở cuối file style.css */
+.letter .words {
+  font-size: 22px !important; 
+}
 
 
