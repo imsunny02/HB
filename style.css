@@ -1,6 +1,6 @@
 html, body {
     background-color: #FFD6BA;
-    overflow: hidden; /* <-- Thêm cái này để cả trang không bị cuộn */
+    overflow: hidden; /* <-- SỬA 1: Ngăn cả trang bị cuộn */
 }
 
 /*login section*/
@@ -158,7 +158,7 @@ canvas {
                 0 8px 0px #CB354E,
                 0 10px 0px #CB354E,
                 0 12px 0px #CB354E,
-              _ 0 14px 0px #CB354E,
+                0 14px 0px #CB354E,
                 0 16px 0px #CB354E,
                 0 18px 0px #CB354E,
                 0 20px 0px #CB354E,
@@ -311,7 +311,7 @@ canvas {
     }
     100% {
         transform: skewX(5deg);
-    }
+  s }
 }
 
 /*letter section*/
@@ -358,7 +358,7 @@ canvas {
     position: relative;
     background-color: #FFF2EB;
     width: 90%;
-    height: 90%; 
+    height: 90%; /* <-- GIỮ NGUYÊN DÒNG NÀY */
     max-height: 480px;
     margin: auto;
     top: 5%;
@@ -384,6 +384,7 @@ canvas {
 }
 
 .words.line1 {
+    /* top: 3%; */ /* <-- SỬA 2: ĐÃ XÓA DÒNG NÀY */
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -402,7 +403,8 @@ canvas {
 .words.line9,
 .words.line10 {
     font-size: 20px;
-    line-height: 1.5; /* <-- ĐÃ SỬA TỪ .8 THÀNH 1.5 */;
+    line-height: 1.5; /* <-- SỬA 3: SỬA TỪ .8 LÊN 1.5 */
+    /* margin-top: 12px; */ /* <-- SỬA 4: ĐÃ XÓA DÒNG NÀY */
 }
 
 
@@ -410,7 +412,7 @@ canvas {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 /* Media query cho tablet */
@@ -434,8 +436,8 @@ canvas {
     .words.line9,
     .words.line10 {
         font-size: 18px;
-        margin-top: 10px;
-        line-height: 1.5; /* <-- Thêm dòng này cho chắc */
+        /* margin-top: 10px; */ /* <-- SỬA 5: ĐÃ XÓA DÒNG NÀY */
+        line-height: 1.5; /* <-- Thêm 1.5 cho chắc */
     }
 
     .words.line11 {
@@ -470,8 +472,8 @@ canvas {
     .words.line9,
     .words.line10 {
         font-size: 16px;
-        margin-top: 8px;
-        line-height: 1.5; /* (Dòng này bạn đã sửa đúng) */
+        /* margin-top: 8px; */ /* <-- SỬA 6: ĐÃ XÓA DÒNG NÀY */
+        line-height: 1.5;
     }
 
     .words.line11 {
@@ -502,8 +504,8 @@ canvas {
     .words.line9,
     .words.line10 {
         font-size: 14px;
-        margin-top: 6px;
-        line-height: 1.5; /* (Dòng này bạn đã sửa đúng) */
+        /* margin-top: 6px; */ /* <-- SỬA 7: ĐÃ XÓA DÒNG NÀY */
+        line-height: 1.5;
     }
 
     .words.line11 {
@@ -537,7 +539,7 @@ canvas {
     .words.line9,
     .words.line10 {
         font-size: 14px;
-        line-height: 1.5; /* (Dòng này bạn đã sửa đúng) */
+        line-height: 1.5;
     }
 
     .words.line11 {
@@ -617,7 +619,7 @@ canvas {
     opacity: 1;
     -webkit-animation: slideUp 4s linear 1, sideSway 2s ease-in-out 4 alternate;
     -moz-animation: slideUp 4s linear 1, sideSway 2s ease-in-out 4 alternate;
-    -webkit-animation-fill-mode: forwards;
+  * -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
     -webkit-animation-delay: 0.7s;
     animation-delay: 0.7s;
@@ -828,7 +830,7 @@ canvas {
         border-right-width: 44vw;
         border-bottom-width: 26.5vw;
         border-top-width: 26.5vw;
-  _ }
+    }
 
     .letter {
         width: 90%;
@@ -875,22 +877,22 @@ canvas {
         min-width: 90px;
     }
 }
+
 /* Thêm vào cuối file style.css */
 
 /* 1. Vỏ bọc nội dung (để cuộn) */
 .letter-content-wrapper {
     height: 100%; 
     width: 100%;
-    overflow: hidden; /* <-- DÒNG NÀY SẼ SỬA LỖI "LÒI CHỮ" */
+    overflow: hidden; /* <-- GIỮ NGUYÊN: Sửa lỗi "lòi chữ" */
     -webkit-overflow-scrolling: touch; 
 }
 
 /* 2. Khi thư mở ra */
 .open .letter-content-wrapper {
-    overflow-y: scroll; /* <-- DÒNG NÀY ĐỂ CUỘN KHI MỞ */
+  M overflow-y: scroll; /* <-- GIỮ NGUYÊN: Để cuộn khi mở */
 }
 /* Phải nằm ở cuối file style.css */
 .letter .words {
   font-size: 22px !important; 
 }
-
