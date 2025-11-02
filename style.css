@@ -472,7 +472,7 @@ canvas {
     .words.line10 {
         font-size: 16px;
         margin-top: 8px;
-        line-height: 0.2;
+        line-height: 1.5;
     }
 
     .words.line11 {
@@ -504,7 +504,7 @@ canvas {
     .words.line10 {
         font-size: 14px;
         margin-top: 6px;
-        line-height: .2;
+        line-height: 1.5;
     }
 
     .words.line11 {
@@ -538,7 +538,7 @@ canvas {
     .words.line9,
     .words.line10 {
         font-size: 14px;
-        line-height: .2;
+        line-height: 1.5;
     }
 
     .words.line11 {
@@ -887,5 +887,6 @@ canvas {
 .open .letter-content-wrapper {
     overflow-y: scroll; /* <-- DÒNG NÀY ĐỂ CUỘN KHI MỞ */
 }
+
 
 
