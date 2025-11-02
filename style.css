@@ -872,28 +872,17 @@ canvas {
         padding: 8px;
         min-width: 90px;
     }
-}
-/* Dán vào cuối file style.css */
-.letter .words {
-  font-size: 22px !important; 
-}
 /* Thêm vào cuối file style.css */
 
 /* 1. Vỏ bọc nội dung (để cuộn) */
 .letter-content-wrapper {
-    height: 100%; /* Lấp đầy 100% chiều cao của .letter */
+    height: 100%; 
     width: 100%;
-    overflow: hidden; /* Quan trọng: Khi đóng thư, ẩn cuộn */
-    -webkit-overflow-scrolling: touch; /* Giúp cuộn mượt trên iPhone */
+    overflow: hidden; /* <-- DÒNG NÀY SẼ SỬA LỖI "LÒI CHỮ" */
+    -webkit-overflow-scrolling: touch; 
 }
 
 /* 2. Khi thư mở ra */
 .open .letter-content-wrapper {
-    overflow-y: scroll; /* Quan trọng: Khi mở thư, cho phép cuộn DỌC */
+    overflow-y: scroll; /* <-- DÒNG NÀY ĐỂ CUỘN KHI MỞ */
 }
-
-
-
-
-
-
