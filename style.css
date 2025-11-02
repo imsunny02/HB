@@ -384,7 +384,6 @@ canvas {
 }
 
 .words.line1 {
-    top: 3%;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -403,8 +402,7 @@ canvas {
 .words.line9,
 .words.line10 {
     font-size: 20px;
-    line-height: 1.5; /* <-- ĐÃ SỬA TỪ .8 THÀNH 1.5 */
-    margin-top: 12px;
+    line-height: 1.5; /* <-- ĐÃ SỬA TỪ .8 THÀNH 1.5 */;
 }
 
 
@@ -412,7 +410,7 @@ canvas {
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 /* Media query cho tablet */
@@ -895,3 +893,4 @@ canvas {
 .letter .words {
   font-size: 22px !important; 
 }
+
